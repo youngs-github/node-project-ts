@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "target": "es6",
+    "lib": ["esnext"],
+    "module": "commonjs",
+    "outDir": "dist",
+    "baseUrl": ".",
+    "rootDir": "./",
+    "alwaysStrict": true,
+    "importHelpers": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "strictFunctionTypes": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "include": ["config", "main", "typings"],
+  "exclude": ["dist", "node_modules"]
+}

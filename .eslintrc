@@ -1,0 +1,35 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "extends": ["plugin:@typescript-eslint/recommended"],
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    // 空格缩进
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    // 单引号引用字符串
+    "quotes": ["error", "single"],
+    // 必须使用分号结束
+    "semi": ["error", "always"],
+    // 不允许tab缩进
+    "no-tabs": "error",
+    "no-var": "error",
+    "no-debugger": "error",
+    "no-func-assign": "error",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-explicit-any": 1,
+    "@typescript-eslint/no-inferrable-types": [
+      "warn",
+      {
+        "ignoreParameters": true
+      }
+    ],
+    "@typescript-eslint/no-unused-vars": "warn"
+  }
+}

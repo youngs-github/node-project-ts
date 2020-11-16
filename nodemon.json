@@ -1,0 +1,8 @@
+{
+  "ignore": ["test.ts"],
+  "watch": ["."],
+  "execMap": {
+    "ts": "ts-node --files"
+  },
+  "ext": "ts,tsx"
+}
